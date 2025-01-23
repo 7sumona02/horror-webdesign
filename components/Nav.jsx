@@ -6,7 +6,7 @@ import localFont from 'next/font/local'
 
 const myFont = localFont({src: 'CreepsterRegular.ttf' })
 
-const items = ["HOME", "THEMES", "TIMELINE", "SPONSORS", "PRIZES", "FAQ"];
+const items = ["home", "about", "themes", "problem", "timeline", "sponsors", "prizes", "faq"];
 const anchor = "left"; 
 
 const Nav = () => {
@@ -53,12 +53,12 @@ const Nav = () => {
       >
         <ul className="h-full p-4 bg-zinc-100 shadow-md shadow-zinc-400 dark:bg-zinc-900 dark:shadow-zinc-950">
           {items.map((item) => (
-            <li
+            <a href={`#${item}`}><li
               key={item}
-              className={`cursor-pointer p-4 text-2xl text-[#ec4e39] ${myFont.className}`}
+              className={`cursor-pointer p-4 text-2xl text-[#ec4e39] uppercase ${myFont.className}`}
             >
               {item}
-            </li>
+            </li></a>
           ))}
         </ul>
       </Drawer>

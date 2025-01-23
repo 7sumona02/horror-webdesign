@@ -8,7 +8,7 @@ const myFont = localFont({src: 'CreepsterRegular.ttf' })
 
 const Theme = () => {
   return (
-        <section className={styles.blog}>
+        <section className={styles.blog} id='themes'>
             <h3>THEMES</h3>
             <div className='grid grid-cols-3 gap-6 mt-5'>
                 <div className='bg-[#ff7940]/90 p-10 border-2 flex flex-col gap-3 items-center justify-center w-[20vw] h-[24vh]'>

@@ -57,7 +57,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <div>
+    <div id='home'>
       <section className={styles.parallax}>
           <h3 id="title" className='text-9xl'>CBS</h3>
           <h2 id="title" className='text-9xl'>CodeFest (1.0)</h2>

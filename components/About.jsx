@@ -2,7 +2,7 @@ import styles from './Hero.module.css'
 
 const About = () => {
   return (
-    <section className={styles.blog}>
+    <section className={styles.blog} id='about'>
         <h3>ABOUT CODEFEST (1.0)</h3>
 
         <div style={{ '--swiper-pagination-color': '#fff' }} className="swiper">
