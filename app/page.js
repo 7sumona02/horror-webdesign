@@ -1,5 +1,6 @@
 import Hero from '@/components/Hero'
 import Nav from '@/components/Nav'
+import About from '@/components/Sponsors'
 import Theme from '@/components/Theme'
 import React from 'react'
 
@@ -10,6 +11,7 @@ const page = () => {
       
       <Nav />
       <Hero />
+      <About />
       <Theme />
       {/* <Timeline /> */}
     </div>
