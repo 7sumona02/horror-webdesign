@@ -7,21 +7,23 @@ import Theme from '@/components/Theme'
 import React from 'react'
 import Prize from '@/components/Prize'
 import FAQ from '@/components/FAQ'
+import Sponsor from '@/components/Sponsors'
+import Timeline from '@/components/Timeline'
 
 const page = () => {
   return (
     <div className='select-none bg-[#160c1f]'>
-      {/* <Footprint /> */}
       
       <Nav />
       <Hero />
       <About />
       <Theme />
       <PS />
+      <Timeline />
       <Prize />
+      <Sponsor />
       <FAQ />
       <Footer />
-      {/* <Timeline /> */}
     </div>
   )
 }

@@ -13,7 +13,7 @@ const myFont = localFont({src: 'CreepsterRegular.ttf' })
 const PS = () => {
   const OPTIONS = { loop: true };
   return (
-    <div className="relative pb-20" id='problem'>
+    <div className="relative pb-32" id='problem'>
         <section className={`pt-32 ${styles.problem}`}>
             <h3>Problem Statements</h3>
         </section>
