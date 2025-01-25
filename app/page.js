@@ -5,6 +5,7 @@ import PS from '@/components/PS'
 import About from '@/components/About'
 import Theme from '@/components/Theme'
 import React from 'react'
+import Prize from '@/components/Prize'
 
 const page = () => {
   return (
@@ -16,6 +17,7 @@ const page = () => {
       <About />
       <Theme />
       <PS />
+      <Prize />
       <Footer />
       {/* <Timeline /> */}
     </div>
