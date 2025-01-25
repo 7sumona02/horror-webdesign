@@ -4,6 +4,7 @@ import { AnimatePresence, motion } from 'framer-motion';
 import { Plus } from 'lucide-react';
 import styles from './Hero.module.css';
 import localFont from 'next/font/local';
+import Footer from './Footer';
 
 const myFont = localFont({src: 'CreepsterRegular.ttf' })
 
@@ -42,8 +43,8 @@ function FAQ() {
   };
 
   return (
-    <div className='' id='faq'>
-      <div className='container mx-auto pb-60 pt-2 flex justify-center flex-col items-center px-60'>
+    <div className='relative pb-20' id='faq'>
+      <div className='container mx-auto pt-2 flex justify-center flex-col items-center px-60'>
         <section className={`pt-10 ${styles.problem}`}>
             <h3>FAQ</h3>
         </section>
@@ -90,6 +91,9 @@ function FAQ() {
             </motion.div>
           ))}
         </div>
+      </div>
+      <div className='absolute top-[60vh] bg-[#160c1f] w-screen'>
+        <Footer />
       </div>
     </div>
   );

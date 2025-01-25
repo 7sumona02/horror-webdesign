@@ -76,7 +76,7 @@ function TimelineItem({ event }) {
       className="mb-8 flex items-center"
     >
       <div className="flex flex-col items-center mr-4">
-        <img src='/fs.svg' className="w-20 h-20 z-10" />
+        <img src='/fs.svg' className="w-14 h-14 z-10" />
       </div>
       <div className="p-4 rounded shadow-md flex-1">
         <div className="text-sm text-zinc-400 mb-1">{event.date}</div>
