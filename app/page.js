@@ -6,6 +6,7 @@ import About from '@/components/About'
 import Theme from '@/components/Theme'
 import React from 'react'
 import Prize from '@/components/Prize'
+import FAQ from '@/components/FAQ'
 
 const page = () => {
   return (
@@ -18,6 +19,7 @@ const page = () => {
       <Theme />
       <PS />
       <Prize />
+      <FAQ />
       <Footer />
       {/* <Timeline /> */}
     </div>

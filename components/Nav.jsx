@@ -51,16 +51,16 @@ const Nav = () => {
         setOpen={toggleDrawer}
         anchor={drawer.anchor}
       >
-        <ul className="h-full p-4 bg-zinc-100 shadow-md shadow-zinc-400 dark:bg-zinc-900 dark:shadow-zinc-950">
-          {items.map((item) => (
-            <a href={`#${item}`}><li
-              key={item}
-              className={`cursor-pointer p-4 text-2xl text-[#ec4e39] uppercase ${myFont.className}`}
-            >
-              {item}
-            </li></a>
-          ))}
-        </ul>
+       <ul className="h-full p-4 bg-zinc-100 shadow-md shadow-zinc-400 dark:bg-zinc-900 dark:shadow-zinc-950">
+  {items.map((item) => (
+    <a key={item} href={`#${item}`}>
+      <li className={`cursor-pointer p-4 text-2xl text-[#ec4e39] uppercase ${myFont.className}`}>
+        {item}
+      </li>
+    </a>
+  ))}
+</ul>
+
       </Drawer>
     </>
   );
