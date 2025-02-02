@@ -4,10 +4,12 @@ import PS from '@/components/PS'
 import About from '@/components/About'
 import Theme from '@/components/Theme'
 import React from 'react'
-import Prize from '@/components/Prize'
 import FAQ from '@/components/FAQ'
 import Sponsor from '@/components/Sponsors'
 import Timeline from '@/components/Timeline'
+import ACM from '@/components/ACM'
+import Team from '@/components/Team'
+import Countdown from '@/components/Countdown'
 
 const page = () => {
   return (
@@ -15,11 +17,13 @@ const page = () => {
       
       <Nav />
       <Hero />
+      <Countdown />
       <About />
+      <ACM />
       <Theme />
       <PS />
       <Timeline />
-      <Prize />
+      <Team />
       <Sponsor />
       <FAQ />
     </div>

@@ -49,7 +49,7 @@ const Carousel = ({
     plugins.push(
       Autoplay({
         playOnInit: true,
-        delay: 3000,
+        delay: 2500,
         stopOnMouseEnter: true,
         jump: false,
         stopOnInteraction: false

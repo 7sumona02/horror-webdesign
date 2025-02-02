@@ -61,6 +61,16 @@
     animation: title 1s ease 0s 1 normal forwards;
   }
 
+  .parallax > h4 {
+    position: absolute;
+    top: 50%;
+    font-family: "Creepster", cursive;
+    font-size: 3rem;
+    color: #ff7940;
+    z-index: 50;
+    animation: title 1s ease 0s 1 normal forwards;
+  }
+
 @keyframes title {
   0% {
     letter-spacing: 3rem;

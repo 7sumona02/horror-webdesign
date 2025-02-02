@@ -2,41 +2,47 @@
 import localFont from 'next/font/local'
 import React from 'react'
 import styles from './Hero.module.css';
-import { User } from 'lucide-react';
+import { Event } from './Event';
 
 const myFont = localFont({src: 'CreepsterRegular.ttf' })
 
 const Theme = () => {
   return (
-        <section className={styles.blog} id='themes'>
-            <h3>THEMES</h3>
-            <div className='grid grid-cols-3 gap-6 mt-5'>
-                <div className='bg-[#ff7940]/90 p-10 border-2 flex flex-col gap-3 items-center justify-center w-[20vw] h-[24vh]'>
-                    <div><User size={30} color='black' strokeWidth={3} /></div>
-                    <div className='text-2xl font-semibold text-black'>Health</div>
-                </div>
-                <div className='bg-[#ff7940]/90 p-10 border-2 flex flex-col gap-3 items-center justify-center w-[20vw] h-[24vh]'>
-                    <div><User size={30} color='black' strokeWidth={3} /></div>
-                    <div className='text-2xl font-semibold text-black'>Education</div>
-                </div>
-                <div className='bg-[#ff7940]/90 p-10 border-2 flex flex-col gap-3 items-center justify-center w-[20vw] h-[24vh]'>
-                    <div><User size={30} color='black' strokeWidth={3} /></div>
-                    <div className='text-2xl font-semibold text-black'>Finance</div>
-                </div>
-                <div className='bg-[#ff7940]/90 p-10 border-2 flex flex-col gap-3 items-center justify-center w-[20vw] h-[24vh]'>
-                    <div><User size={30} color='black' strokeWidth={3} /></div>
-                    <div className='text-2xl font-semibold text-black'>Web3</div>
-                </div>
-                <div className='bg-[#ff7940]/90 p-10 border-2 flex flex-col gap-3 items-center justify-center w-[20vw] h-[24vh]'>
-                    <div><User size={30} color='black' strokeWidth={3} /></div>
-                    <div className='text-2xl font-semibold text-black'>IOT</div>
-                </div>
-                <div className='bg-[#ff7940]/90 p-10 border-2 flex flex-col gap-3 items-center justify-center w-[20vw] h-[24vh]'>
-                    <div><User size={30} color='black' strokeWidth={3} /></div>
-                    <div className='text-2xl font-semibold text-black'>Innovation</div>
-                </div>
-            </div>
+    <div className="relative pb-28" id='events'>
+        <section className={`pt-24 ${styles.problem}`}>
+            <h3>EVENTS</h3>
         </section>
+        
+            {/* <div className='flex justify-center'>
+                <div className='grid grid-cols-3 gap-6 mt-5'>
+                <FlipCard 
+                title="Health" 
+                redirectUrl="https://www.example.com/health" // Specify the redirect URL here
+                />
+                <FlipCard 
+                title="AI/ML" 
+                redirectUrl="https://www.example.com/health" // Specify the redirect URL here
+                />
+                <FlipCard 
+                title="WebDev" 
+                redirectUrl="https://www.example.com/health" // Specify the redirect URL here
+                />
+                <FlipCard 
+                title="Health" 
+                redirectUrl="https://www.example.com/health" // Specify the redirect URL here
+                />
+                <FlipCard 
+                title="Health" 
+                redirectUrl="https://www.example.com/health" // Specify the redirect URL here
+                />
+                <FlipCard 
+                title="Health" 
+                redirectUrl="https://www.example.com/health" // Specify the redirect URL here
+                />
+                </div>
+            </div> */}
+            <Event />
+        </div>
   )
 }
 

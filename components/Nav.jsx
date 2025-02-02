@@ -6,7 +6,7 @@ import localFont from 'next/font/local'
 
 const myFont = localFont({src: 'CreepsterRegular.ttf' })
 
-const items = ["home", "about", "themes", "problem", "timeline", "sponsors", "prizes", "faq"];
+const items = ["home", "about", "events", "timeline", "team", "sponsors", "faq"];
 const anchor = "left"; 
 
 const Nav = () => {
@@ -36,7 +36,7 @@ const Nav = () => {
 
   return (
     <>
-      <div className="">
+      <div className="z-[200]">
         <motion.img 
           src='/nav.svg'
           onClick={() => setDrawer({ anchor, open: true })} // Use only 'right'

@@ -61,6 +61,7 @@ const Hero = () => {
       <section className={styles.parallax}>
           <h3 id="title" className='text-9xl'>CBS</h3>
           <h2 id="title" className='text-9xl'>CodeFest (1.0)</h2>
+          <h4 id="date" className='text-6xl' style={{ fontFamily: 'Creepster, cursive', color: '#ff6f00', textShadow: '2px 2px 4px #000000' }}>21 July 2025</h4>
         <img src="https://github.com/ecemgo/mini-samples-great-tricks/assets/13468728/9648a7a2-03fe-4b48-b7ab-195ec34ac6a6" id="leftside" alt="halloween" />
         <img src="https://github.com/ecemgo/mini-samples-great-tricks/assets/13468728/5c125b01-3bda-46ed-87bf-f64a9cc39d9b" id="rightside" alt="halloween" />
         <img src="https://github.com/ecemgo/mini-samples-great-tricks/assets/13468728/8102d1ed-0b60-40b6-a38a-75600c1c9c75" id="moon" alt="halloween" />
@@ -68,12 +69,8 @@ const Hero = () => {
         <img src="https://github.com/ecemgo/mini-samples-great-tricks/assets/13468728/b8c09600-d3c2-4eab-a3e1-4f9a75d14331" id="leftpumpkin" alt="halloween" />
         <img src="https://github.com/ecemgo/mini-samples-great-tricks/assets/13468728/dc895daa-7d0c-4b65-946c-36faecc1d78e" id="rightpumpkin" alt="halloween" />
       </section>
-
-      
     </div>
   );
 };
-
-
 
 export default Hero;
