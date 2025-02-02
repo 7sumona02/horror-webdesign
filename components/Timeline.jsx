@@ -2,36 +2,41 @@
 
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
-import localFont from 'next/font/local'
+import localFont from 'next/font/local';
 import styles from './Hero.module.css';
 
-const myFont = localFont({src: 'CreepsterRegular.ttf' })
+const myFont = localFont({ src: 'CreepsterRegular.ttf' });
 
 const events = [
   {
-    date: "2020",
-    title: "Founded Company",
-    description: "Our journey began with a simple idea and a lot of passion.",
+    date: "15th Jan 2025",
+    title: "Hackathon Registration Opens",
+    description: "Participants can start registering for the upcoming hackathon.",
   },
   {
-    date: "2021",
-    title: "Expanded Team",
-    description: "We grew from 5 to 25 employees, expanding our capabilities.",
+    date: "30th Jan 2025",
+    title: "Hackathon Registration Closes",
+    description: "Final call for participants to register and form teams.",
   },
   {
-    date: "2022",
-    title: "First Major Product Launch",
-    description: "Our flagship product hit the market, receiving rave reviews.",
+    date: "1st Feb 2025",
+    title: "Hackathon Kickoff",
+    description: "The hackathon begins with a live opening ceremony and team presentations.",
   },
   {
-    date: "2023",
-    title: "International Expansion",
-    description: "We opened offices in London, Tokyo, and Sydney.",
+    date: "2nd Feb 2025",
+    title: "Midway Checkpoint",
+    description: "Teams present their progress and receive feedback from mentors.",
   },
   {
-    date: "2024",
-    title: "Reached 1 Million Users",
-    description: "A milestone achievement in our growth journey.",
+    date: "3rd Feb 2025",
+    title: "Final Submissions",
+    description: "Teams submit their projects by the deadline.",
+  },
+  {
+    date: "4th Feb 2025",
+    title: "Judging and Awards Ceremony",
+    description: "Winners are announced, and prizes are awarded to top projects.",
   },
 ];
 
@@ -44,13 +49,9 @@ export default function Timeline() {
 
   return (
     <div ref={ref} id='timeline' className="relative w-full max-w-2xl mx-auto mb-40">
-        <section className={`pt-32 ${styles.problem}`}>
-            <h3>Timeline</h3>
-        </section>
-      {/* <motion.div 
-        className="absolute left-9 top-0 bottom-0 w-0.5 bg-gray-200" 
-        style={{ scaleY: scrollYProgress }} 
-      /> */}
+      <section className={`pt-32 ${styles.problem}`}>
+        <h3>Hackathon Timeline</h3>
+      </section>
       {events.map((event, index) => (
         <TimelineItem key={index} event={event} />
       ))}
