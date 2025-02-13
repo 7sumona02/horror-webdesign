@@ -43,12 +43,12 @@ function FAQ() {
   };
 
   return (
-    <div className='relative pb-20' id='faq'>
+    <div className='relative pb-40' id='faq'>
       <div className='container mx-auto pt-2 flex justify-center flex-col items-center px-60'>
         <section className={`pt-10 ${styles.problem}`}>
             <h3>FAQ</h3>
         </section>
-        <div className='h-fit border-2 p-2 dark:bg-[#160c1f] bg-[#F2F2F2]'>
+        <div className='h-fit border-2 p-2 dark:bg-[#160c1f] bg-[#F2F2F2] w-[600px]'>
           {tabs.map((tab, FAQ) => (
             <motion.div
               key={FAQ}
@@ -92,9 +92,9 @@ function FAQ() {
           ))}
         </div>
       </div>
-      <div className='absolute top-[60vh] bg-[#160c1f] w-screen'>
+      {/* <div className='absolute top-[60vh] bg-[#160c1f] w-screen'>
         <Footer />
-      </div>
+      </div> */}
     </div>
   );
 }

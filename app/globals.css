@@ -36,3 +36,7 @@ html {
   position: absolute;
   content: "";
 }
+
+.font-creepster {
+  font-family: 'Creepster', cursive;
+}
