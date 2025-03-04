@@ -1,3 +1,4 @@
+'use client'
 import styles from './Hero.module.css'
 
 const About = () => {
